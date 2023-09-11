@@ -72,7 +72,7 @@ export const POST = async (request) => {
   if(role === "ADMIN"){
     return NextResponse.json(
         {
-          ok: true,
+          ok: false,
           message: "Only Student can access this API route",
         },
         { status: 403 }
